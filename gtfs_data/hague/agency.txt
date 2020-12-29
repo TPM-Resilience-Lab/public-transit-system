@@ -1,0 +1,6 @@
+agency_id,agency_name,agency_url,agency_fare_url,agency_timezone,agency_phone
+ARR,Arriva,https://www.arriva.nl,https://www.arriva.nl/eticket,Europe/Amsterdam,0031900-2022022
+EBS,EBS,http://www.ebs-ov.nl,,Europe/Amsterdam,0031800-0327
+HTM,HTM,http://www.htm.nl,,Europe/Amsterdam,0031900-4864636
+IFF:NS,NS,http://www.ns.nl,http://www.ns.nl/eticket,Europe/Amsterdam,003130-7515155
+RET,RET,http://www.ret.nl,,Europe/Amsterdam,0031900-5006010
