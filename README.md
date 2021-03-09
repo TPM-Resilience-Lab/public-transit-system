@@ -1,12 +1,57 @@
-# GTFS Tools for Faster Public Transit Simulation
+gtfs_tools
+==============================
 
-This package consists of python codes for processing standard static GTFS datasets for aiding faster simulation of public transit systems. The package consists of the following two notebook files.
+A set of tools to extract relevant transit information for faster simulation of public transit systems
 
-- ```gtfs_generator.ipynb```: This notebook contains codes to generate GTFS datasets for cities and subregions from a region-level GTFS dataset. For example, GTFS datasets for Amsterdam, The Hauge or Amsterdam can be created from the Netherlands GTFS dataset.
+Project Organization
+------------
 
-- ```transit_schedule_table.ipynb```: This notebook contains codes to generate time schedule tables of typical weekdays and weekends from static GTFS datasets. The time schedule tables provides a simpler approximation of trips on various routes using start times, stop sequences, and inter-station times.
+    ├── LICENSE
+    ├── Makefile           <- Makefile with commands like `make data` or `make train`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── src                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── data           <- Scripts to download or generate data
+    │   │   └── make_dataset.py
+    │   │
+    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   │   └── build_features.py
+    │   │
+    │   ├── models         <- Scripts to train models and then use trained models to make
+    │   │   │                 predictions
+    │   │   ├── predict_model.py
+    │   │   └── train_model.py
+    │   │
+    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │       └── visualize.py
+    │
+    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
-- ```transit_trip_analysis.ipynb```: This notebook contains codes to analyze the daily trips and routes count over the timeframe for which the GTFS dataset is applicable. This can be useful in identifying daily and weekly patterns in the dataset and help in making informed decisions regarding the selection of dates for generating the transit schedule tables.
 
+--------
 
-*Please refer to the codes for more detailed documentation.*
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
